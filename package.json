@@ -6,6 +6,8 @@
   "scripts": {
     "dev:frontend": "vite",
     "dev:backend": "tsx watch src/server/index.ts",
+    "postinstall": "prisma generate",
+    "migrate:dev": "prisma migrate dev",
     "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
